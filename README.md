@@ -140,11 +140,6 @@ For direct inference or interactive testing, you can refer to the provided Jupyt
 
 - [`infer/phi4_audio.py`](./infer/phi4_audio.py): Standalone inference script for the Phi-4-Multimodal based model.
 
-**Quick Start Example:**
-```bash
-python infer/phi4_audio.py --audio_path wav/example.wav --prompt "Solve this math problem."
-```
-
 ## 🙏 Acknowledgements
 
 Our work is built upon and inspired by several excellent open-source projects:
