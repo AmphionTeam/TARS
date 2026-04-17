@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xfinder"
+version = "0.2.6.dev"
+
+description = "An Robust and Pinpoint Answer Extractor for LLM Evaluation"
+authors = [
+  { name = "Qingchen Yu", email = "zhgqcyu@gmail.com" },
+]
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+keywords = ["LLM", "NLP", "answer extraction", "reliable evaluation"]
+classifiers = [
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+Repository = "https://github.com/IAAR-Shanghai/xFinder"
+
+[project.scripts]
+xfinder-run-example = "xfinder.eval:main"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.targets.sdist]
+exclude = ["/scripts", "/CITATION.bib", "demo.ipynb"]

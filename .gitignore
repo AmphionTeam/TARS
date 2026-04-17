@@ -1,0 +1,10 @@
+__pycache__
+output
+.gradio
+output_*
+wandb
+.vscode
+scripts/install_xfinder/xFinder
+train_dataset
+test_dataset
+*.parquet
